@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>For 1</Title>
+			<Shortcut>for1</Shortcut>
+			<Description>일차원 for문을 만들어냅니다.</Description>
+			<Author>gskim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>length</ID>
+					<Default>0</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[for(int i = 0, l = $length$; i < l; ++i)
+{
+    $end$
+}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
