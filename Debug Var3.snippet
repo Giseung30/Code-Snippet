@@ -2,7 +2,7 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Debug</Title>
+			<Title>Debug Var3</Title>
 			<Shortcut>db</Shortcut>
 			<Description>Debug.Log문을 만들어냅니다.</Description>
 			<Author>gskim</Author>
@@ -13,8 +13,20 @@
 		</Header>
 		<Snippet>
 			<Declarations>
+				<Literal>
+					<ID>var</ID>
+					<Default>var</Default>
+				</Literal>
+				<Literal>
+					<ID>var2</ID>
+					<Default>var2</Default>
+				</Literal>
+				<Literal>
+					<ID>var3</ID>
+					<Default>var3</Default>
+				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[Debug.Log("$end$");]]>
+			<Code Language="csharp"><![CDATA[Debug.Log($$"$var$ : {$var$}, $var2$ : {$var2$}, $var3$ : {$var3$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
