@@ -16,7 +16,7 @@
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>For</Title>
