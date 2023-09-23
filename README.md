@@ -6,7 +6,7 @@
 + [2019, Community, C#] 기준으로 `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC#\Snippets\1042` 하위 경로에 폴더를 생성하여 파일을 추가합니다.
 + Visual Studio에서 `도구 → 코드 조각 관리자` 탭을 열어서 `CSharp` 언어를 선택하고, 위에서 생성한 폴더를 추가합니다.
 + Visual Studio를 재시작합니다.
-+ 단축키 `Ctrl + K, X`를 눌러 코드 조각을 불러옵니다.
++ 단축키 `Ctrl + K, Ctrl + X`를 눌러 코드 조각을 불러옵니다.
 
 ## 📃 Snippet 양식
 + For문을 생성하는 Snippet의 예시입니다.
