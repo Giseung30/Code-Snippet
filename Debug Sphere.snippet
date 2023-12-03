@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Debug Sphere</Title>
+			<Shortcut>dbs</Shortcut>
+			<Description>Debug용 Sphere를 만듭니다.</Description>
+			<Author>gskim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>posX</ID>
+					<Default>0</Default>
+				</Literal>
+				<Literal>
+					<ID>posY</ID>
+					<Default>0</Default>
+				</Literal>
+				<Literal>
+					<ID>posZ</ID>
+					<Default>0</Default>
+				</Literal>
+				<Literal>
+					<ID>colorR</ID>
+					<Default>1</Default>
+				</Literal>
+				<Literal>
+					<ID>colorG</ID>
+					<Default>1</Default>
+				</Literal>
+				<Literal>
+					<ID>colorB</ID>
+					<Default>1</Default>
+				</Literal>
+				<Literal>
+					<ID>scale</ID>
+					<Default>1</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[#if UNITY_EDITOR
+GameObject dbSphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+dbSphere.transform.position = new Vector3($posX$f, $posY$f, $posZ$f);
+dbSphere.GetComponent<MeshRenderer>().material.color = new Color($colorR$f, $colorG$f, $colorB$f);
+dbSphere.transform.localScale = $scale$f * Vector3.one;
+dbSphere.name = $$"Debug Sphere | {dbSphere.transform.position}";
+#endif$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
