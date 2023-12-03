@@ -26,18 +26,6 @@
 					<Default>0</Default>
 				</Literal>
 				<Literal>
-					<ID>colorR</ID>
-					<Default>1</Default>
-				</Literal>
-				<Literal>
-					<ID>colorG</ID>
-					<Default>1</Default>
-				</Literal>
-				<Literal>
-					<ID>colorB</ID>
-					<Default>1</Default>
-				</Literal>
-				<Literal>
 					<ID>scale</ID>
 					<Default>1</Default>
 				</Literal>
@@ -46,7 +34,6 @@
 				<![CDATA[#if UNITY_EDITOR
 GameObject dbSphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 dbSphere.transform.position = new Vector3($posX$f, $posY$f, $posZ$f);
-dbSphere.GetComponent<MeshRenderer>().material.color = new Color($colorR$f, $colorG$f, $colorB$f);
 dbSphere.transform.localScale = $scale$f * Vector3.one;
 dbSphere.name = $$"Debug Sphere | {dbSphere.transform.position}";
 #endif$end$]]>
