@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Property</Title>
+			<Shortcut>pp</Shortcut>
+			<Description>프로퍼티를 생성합니다.</Description>
+			<Author>gskim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<Default>bool</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>name</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[private $type$ _$name$;
+public $type$ $name$
+{
+    get
+    {
+        return _$name$;
+    }
+    set
+    {
+        _$name$ = value;
+    }
+}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
