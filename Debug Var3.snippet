@@ -26,7 +26,8 @@
 					<Default>var3</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[Debug.Log($$"$var$ : {$var$}, $var2$ : {$var2$}, $var3$ : {$var3$}");$end$]]>
+			<Code Language="csharp">
+				<![CDATA[Debug.Log($$"{nameof($var$)} : {$var$}, {nameof($var2$)} : {$var2$}, {nameof($var3$)} : {$var3$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

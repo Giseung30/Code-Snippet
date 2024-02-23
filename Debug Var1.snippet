@@ -18,7 +18,8 @@
 					<Default>var</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[Debug.Log($$"$var$ : {$var$}");$end$]]>
+			<Code Language="csharp">
+				<![CDATA[Debug.Log($$"{nameof($var$)} : {$var$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
