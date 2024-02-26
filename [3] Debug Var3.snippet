@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Property</Title>
-			<Shortcut>pp</Shortcut>
-			<Description>프로퍼티를 생성합니다.</Description>
+			<Title>[3] Debug Var3</Title>
+			<Shortcut>db3</Shortcut>
+			<Description>Debug.Log문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,27 +14,20 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>type</ID>
-					<Default>bool</Default>
+					<ID>var</ID>
+					<Default>var</Default>
 				</Literal>
 				<Literal>
-					<ID>name</ID>
-					<Default>name</Default>
+					<ID>var2</ID>
+					<Default>var2</Default>
+				</Literal>
+				<Literal>
+					<ID>var3</ID>
+					<Default>var3</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[private $type$ _$name$;
-public $type$ $name$
-{
-    get
-    {
-        return _$name$;
-    }
-    set
-    {
-        _$name$ = value;
-    }
-}]]>
+				<![CDATA[Debug.Log($$"{nameof($var$)} : {$var$}, {nameof($var2$)} : {$var2$}, {nameof($var3$)} : {$var3$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
