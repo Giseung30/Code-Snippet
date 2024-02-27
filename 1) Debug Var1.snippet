@@ -2,8 +2,8 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>[5] Debug</Title>
-			<Shortcut>db</Shortcut>
+			<Title>1) Debug Var1</Title>
+			<Shortcut>db1</Shortcut>
 			<Description>Debug.Log문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
@@ -12,8 +12,14 @@
 			</SnippetTypes>
 		</Header>
 		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>var</ID>
+					<Default>var</Default>
+				</Literal>
+			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[Debug.Log("$end$");]]>
+				<![CDATA[Debug.Log($$"{nameof($var$)} : {$var$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
