@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>7) Property</Title>
-			<Shortcut>pp</Shortcut>
-			<Description>프로퍼티를 생성합니다.</Description>
+			<Title>9) Comment Line</Title>
+			<Shortcut>cl</Shortcut>
+			<Description>코멘트를 남길 수 있는 줄을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,27 +14,12 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>type</ID>
-					<Default>bool</Default>
-				</Literal>
-				<Literal>
-					<ID>name</ID>
-					<Default>name</Default>
+					<ID>Comment</ID>
+					<Default>Comment</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[private $type$ _$name$;
-public $type$ $name$
-{
-    get
-    {
-        return _$name$;
-    }
-    set
-    {
-        _$name$ = value;
-    }
-}]]>
+				<![CDATA[//__________________________________________________________________________ $Comment$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

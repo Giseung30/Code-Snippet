@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>8) Comment Line</Title>
-			<Shortcut>cl</Shortcut>
-			<Description>코멘트를 남길 수 있는 줄을 만듭니다.</Description>
+			<Title>7) For</Title>
+			<Shortcut>for</Shortcut>
+			<Description>for문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,12 +14,23 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>Comment</ID>
-					<Default>Comment</Default>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+				<Literal>
+					<ID>l</ID>
+					<Default>l</Default>
+				</Literal>
+				<Literal>
+					<ID>length</ID>
+					<Default>0</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[//__________________________________________________________________________ $Comment$]]>
+				<![CDATA[for(int $i$ = 0, $l$ = $length$; $i$ < $l$; ++$i$)
+{
+    $end$
+}]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
