@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>7) For</Title>
-			<Shortcut>for</Shortcut>
-			<Description>for문을 만듭니다.</Description>
+			<Title>b) Debug Var2</Title>
+			<Shortcut>db2</Shortcut>
+			<Description>Debug.Log문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,23 +14,16 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>i</ID>
-					<Default>i</Default>
+					<ID>var</ID>
+					<Default>var</Default>
 				</Literal>
 				<Literal>
-					<ID>l</ID>
-					<Default>l</Default>
-				</Literal>
-				<Literal>
-					<ID>length</ID>
-					<Default>0</Default>
+					<ID>var2</ID>
+					<Default>var2</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[for(int $i$ = 0, $l$ = $length$; $i$ < $l$; ++$i$)
-{
-    $end$
-}]]>
+				<![CDATA[Debug.Log($$"$var$ : {$var$}, $var2$ : {$var2$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

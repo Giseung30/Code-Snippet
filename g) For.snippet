@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>8) Property</Title>
-			<Shortcut>pp</Shortcut>
-			<Description>프로퍼티를 생성합니다.</Description>
+			<Title>g) For</Title>
+			<Shortcut>for</Shortcut>
+			<Description>for문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,26 +14,22 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>type</ID>
-					<Default>bool</Default>
+					<ID>i</ID>
+					<Default>i</Default>
 				</Literal>
 				<Literal>
-					<ID>name</ID>
-					<Default>name</Default>
+					<ID>l</ID>
+					<Default>l</Default>
+				</Literal>
+				<Literal>
+					<ID>length</ID>
+					<Default>0</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[private $type$ _$name$;
-public $type$ $name$
+				<![CDATA[for(int $i$ = 0, $l$ = $length$; $i$ < $l$; ++$i$)
 {
-    get
-    {
-        return _$name$;
-    }
-    set
-    {
-        _$name$ = value;
-    }
+    $end$
 }]]>
 			</Code>
 		</Snippet>
