@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>k) Context Menu</Title>
+			<Shortcut>ct</Shortcut>
+			<Description>ContextMenu를 만듭니다.</Description>
+			<Author>gskim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>name</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[[ContextMenu("$name$")]
+public void $name$()
+{
+	$end$
+}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
