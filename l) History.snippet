@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>l) History</Title>
+			<Shortcut>ht</Shortcut>
+			<Description>History를 만듭니다.</Description>
+			<Author>gskim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>function</ID>
+					<Default>기능</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>이름</Default>
+				</Literal>
+				<Literal>
+					<ID>year</ID>
+					<Default>0000</Default>
+				</Literal>
+				<Literal>
+					<ID>month</ID>
+					<Default>01</Default>
+				</Literal>
+				<Literal>
+					<ID>day</ID>
+					<Default>01</Default>
+				</Literal>
+				<Literal>
+					<ID>context</ID>
+					<Default>내용</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[/*
+
+@ 기능 : $function$
+
+@ v1.0.0 / $name$ [$year$.$month$.$day$] / $context$
+
+*/]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
